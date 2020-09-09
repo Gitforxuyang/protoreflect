@@ -268,6 +268,7 @@ func (m *messageImpl) UnmarshalJSON(b []byte) error {
 		return &perrors.ProxyError{
 			Code:    perrors.MessageTypeMismatch,
 			Message: "input JSON does not match messageImpl type",
+			Err:err,
 		}
 	}
 	return nil

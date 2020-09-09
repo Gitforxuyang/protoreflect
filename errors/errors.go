@@ -55,9 +55,9 @@ func (e *ProxyError) Error() string {
 	case ServiceNotFound:
 		return "service not found; service discovery error"
 	case MethodNotFound:
-		return "no such gRPC method"
+		return e.Err.Error()
 	case MessageTypeMismatch:
-		return "message type mismatch"
+		return e.Err.Error()
 	case VersionNotSpecified:
 		return "multiple versions of this service exist. specify version in request"
 	case VersionUndecidable:
