@@ -636,7 +636,7 @@ func BlockingDial(ctx context.Context, network, address string, creds credential
 		opts = append(opts,
 			grpc.WithBlock(),
 			grpc.FailOnNonTempDialError(true),
-			//grpc.WithContextDialer(dialer),
+			grpc.WithContextDialer(dialer),
 		)
 		if creds == nil {
 			opts = append(opts, grpc.WithInsecure())
