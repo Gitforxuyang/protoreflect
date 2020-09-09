@@ -12,7 +12,7 @@ syntax = "proto2"; // Syntax trailer.
 package foo.bar;
 
 // option comments FTW!!!
-option go_package = "github.com/jhump/protoreflect/internal/testprotos";
+option go_package = "github.com/Gitforxuyang/protoreflect/internal/testprotos";
 
 import "google/protobuf/empty.proto";
 

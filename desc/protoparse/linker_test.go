@@ -11,9 +11,9 @@ import (
 	"github.com/golang/protobuf/proto"
 	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
 
-	"github.com/jhump/protoreflect/desc"
-	_ "github.com/jhump/protoreflect/internal/testprotos"
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/Gitforxuyang/protoreflect/desc"
+	_ "github.com/Gitforxuyang/protoreflect/internal/testprotos"
+	"github.com/Gitforxuyang/protoreflect/internal/testutil"
 )
 
 func TestSimpleLink(t *testing.T) {

@@ -9,7 +9,7 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
 
-	"github.com/jhump/protoreflect/desc"
+	"github.com/Gitforxuyang/protoreflect/desc"
 )
 
 // EncodeZigZag64 does zig-zag encoding to convert the given

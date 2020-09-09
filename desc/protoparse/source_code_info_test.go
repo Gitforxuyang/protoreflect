@@ -9,9 +9,9 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/dynamic"
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/Gitforxuyang/protoreflect/desc"
+	"github.com/Gitforxuyang/protoreflect/dynamic"
+	"github.com/Gitforxuyang/protoreflect/internal/testutil"
 )
 
 // If true, re-generates the golden output file

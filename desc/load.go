@@ -8,7 +8,7 @@ import (
 	"github.com/golang/protobuf/proto"
 	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
 
-	"github.com/jhump/protoreflect/internal"
+	"github.com/Gitforxuyang/protoreflect/internal"
 )
 
 var (

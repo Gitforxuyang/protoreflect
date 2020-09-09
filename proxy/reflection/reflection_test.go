@@ -7,7 +7,7 @@ import (
 
 	perrors "github.com/Gitforxuyang/protoreflect/errors"
 	"github.com/Gitforxuyang/protoreflect/proxy/test"
-	"github.com/jhump/protoreflect/dynamic"
+	"github.com/Gitforxuyang/protoreflect/dynamic"
 	_ "google.golang.org/grpc/test/grpc_testing"
 )
 

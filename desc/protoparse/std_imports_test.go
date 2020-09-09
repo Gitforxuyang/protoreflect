@@ -5,7 +5,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/Gitforxuyang/protoreflect/internal/testutil"
 )
 
 func TestStdImports(t *testing.T) {

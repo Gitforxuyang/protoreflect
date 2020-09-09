@@ -19,9 +19,9 @@ import (
 	"google.golang.org/grpc/reflection"
 	rpb "google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
 
-	"github.com/jhump/protoreflect/internal"
-	"github.com/jhump/protoreflect/internal/testprotos"
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/Gitforxuyang/protoreflect/internal"
+	"github.com/Gitforxuyang/protoreflect/internal/testprotos"
+	"github.com/Gitforxuyang/protoreflect/internal/testutil"
 )
 
 var client *Client

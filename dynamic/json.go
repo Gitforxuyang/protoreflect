@@ -26,7 +26,7 @@ import (
 	_ "github.com/golang/protobuf/ptypes/timestamp"
 	_ "github.com/golang/protobuf/ptypes/wrappers"
 
-	"github.com/jhump/protoreflect/desc"
+	"github.com/Gitforxuyang/protoreflect/desc"
 )
 
 var wellKnownTypeNames = map[string]struct{}{

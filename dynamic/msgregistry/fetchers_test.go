@@ -17,7 +17,7 @@ import (
 	"google.golang.org/genproto/protobuf/ptype"
 	"google.golang.org/genproto/protobuf/source_context"
 
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/Gitforxuyang/protoreflect/internal/testutil"
 )
 
 func TestCachingTypeFetcher(t *testing.T) {

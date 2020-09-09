@@ -6,8 +6,8 @@ package testprotos
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	nopkg "github.com/jhump/protoreflect/internal/testprotos/nopkg"
-	pkg "github.com/jhump/protoreflect/internal/testprotos/pkg"
+	nopkg "github.com/Gitforxuyang/protoreflect/internal/testprotos/nopkg"
+	pkg "github.com/Gitforxuyang/protoreflect/internal/testprotos/pkg"
 	math "math"
 )
 

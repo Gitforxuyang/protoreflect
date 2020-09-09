@@ -9,7 +9,7 @@ import (
 	"github.com/Gitforxuyang/protoreflect/metadata"
 	"github.com/Gitforxuyang/protoreflect/proxy/reflection"
 	"github.com/Gitforxuyang/protoreflect/proxy/test"
-	"github.com/jhump/protoreflect/dynamic/grpcdynamic"
+	"github.com/Gitforxuyang/protoreflect/dynamic/grpcdynamic"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	_ "google.golang.org/grpc/test/grpc_testing"

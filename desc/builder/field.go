@@ -8,8 +8,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
 
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/desc/internal"
+	"github.com/Gitforxuyang/protoreflect/desc"
+	"github.com/Gitforxuyang/protoreflect/desc/internal"
 )
 
 // FieldBuilder is a builder used to construct a desc.FieldDescriptor. A field

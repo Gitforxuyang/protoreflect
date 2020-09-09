@@ -5,7 +5,7 @@ package dynamic
 import (
 	"fmt"
 	"github.com/golang/protobuf/proto"
-	"github.com/jhump/protoreflect/codec"
+	"github.com/Gitforxuyang/protoreflect/codec"
 	"io"
 )
 

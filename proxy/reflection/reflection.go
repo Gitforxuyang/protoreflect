@@ -5,8 +5,8 @@ import (
 
 	"github.com/Gitforxuyang/protoreflect/grpcurl"
 	"github.com/golang/protobuf/proto"
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/dynamic"
+	"github.com/Gitforxuyang/protoreflect/desc"
+	"github.com/Gitforxuyang/protoreflect/dynamic"
 	"github.com/pkg/errors"
 
 	perrors "github.com/Gitforxuyang/protoreflect/errors"

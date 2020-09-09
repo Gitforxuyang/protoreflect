@@ -6,7 +6,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/jhump/protoreflect/desc"
+	"github.com/Gitforxuyang/protoreflect/desc"
 )
 
 // Merge merges the given source message into the given destination message. Use

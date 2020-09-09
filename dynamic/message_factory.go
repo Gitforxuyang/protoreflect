@@ -6,7 +6,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/jhump/protoreflect/desc"
+	"github.com/Gitforxuyang/protoreflect/desc"
 )
 
 // MessageFactory can be used to create new empty message objects. A default instance

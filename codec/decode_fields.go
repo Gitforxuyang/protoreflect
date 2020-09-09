@@ -9,7 +9,7 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
 
-	"github.com/jhump/protoreflect/desc"
+	"github.com/Gitforxuyang/protoreflect/desc"
 )
 
 var varintTypes = map[descriptor.FieldDescriptorProto_Type]bool{}
@@ -42,7 +42,7 @@ var ErrWireTypeEndGroup = errors.New("unexpected wire type: end group")
 // MessageFactory is used to instantiate messages when DecodeFieldValue needs to
 // decode a message value.
 //
-// Also see MessageFactory in "github.com/jhump/protoreflect/dynamic", which
+// Also see MessageFactory in "github.com/Gitforxuyang/protoreflect/dynamic", which
 // implements this interface.
 type MessageFactory interface {
 	NewMessage(md *desc.MessageDescriptor) proto.Message

@@ -8,7 +8,7 @@ import "nopkg/desc_test_nopkg.proto";
 
 import "pkg/desc_test_pkg.proto";
 
-option go_package = "github.com/jhump/protoreflect/internal/testprotos";
+option go_package = "github.com/Gitforxuyang/protoreflect/internal/testprotos";
 
 message Frobnitz {
   optional TestMessage a = 1;

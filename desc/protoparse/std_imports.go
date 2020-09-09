@@ -15,7 +15,7 @@ import (
 	_ "google.golang.org/genproto/protobuf/ptype"
 	_ "google.golang.org/genproto/protobuf/source_context"
 
-	"github.com/jhump/protoreflect/internal"
+	"github.com/Gitforxuyang/protoreflect/internal"
 )
 
 // All files that are included with protoc are also included with this package

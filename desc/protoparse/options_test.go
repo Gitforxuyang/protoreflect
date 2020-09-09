@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/Gitforxuyang/protoreflect/internal/testutil"
 )
 
 type ident string

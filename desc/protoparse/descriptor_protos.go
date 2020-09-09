@@ -9,7 +9,7 @@ import (
 	"github.com/golang/protobuf/proto"
 	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
 
-	"github.com/jhump/protoreflect/desc/internal"
+	"github.com/Gitforxuyang/protoreflect/desc/internal"
 )
 
 func (r *parseResult) createFileDescriptor(filename string, file *fileNode) {

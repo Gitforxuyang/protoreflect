@@ -18,9 +18,9 @@ import (
 	_ "google.golang.org/genproto/protobuf/ptype"
 	_ "google.golang.org/genproto/protobuf/source_context"
 
-	"github.com/jhump/protoreflect/internal"
-	"github.com/jhump/protoreflect/internal/testprotos"
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/Gitforxuyang/protoreflect/internal"
+	"github.com/Gitforxuyang/protoreflect/internal/testprotos"
+	"github.com/Gitforxuyang/protoreflect/internal/testutil"
 )
 
 func TestFileDescriptorObjectGraph(t *testing.T) {

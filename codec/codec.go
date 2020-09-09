@@ -4,7 +4,7 @@ import (
 	"io"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/jhump/protoreflect/internal/codec"
+	"github.com/Gitforxuyang/protoreflect/internal/codec"
 )
 
 // ErrOverflow is returned when an integer is too large to be represented.

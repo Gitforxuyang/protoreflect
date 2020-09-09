@@ -7,8 +7,8 @@ import (
 
 	dpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
 
-	"github.com/jhump/protoreflect/desc/internal"
-	intn "github.com/jhump/protoreflect/internal"
+	"github.com/Gitforxuyang/protoreflect/desc/internal"
+	intn "github.com/Gitforxuyang/protoreflect/internal"
 )
 
 // CreateFileDescriptor instantiates a new file descriptor for the given descriptor proto.

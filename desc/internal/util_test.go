@@ -3,7 +3,7 @@ package internal
 import (
 	"testing"
 
-	"github.com/jhump/protoreflect/internal/testutil"
+	"github.com/Gitforxuyang/protoreflect/internal/testutil"
 )
 
 func TestCreatePrefixList(t *testing.T) {

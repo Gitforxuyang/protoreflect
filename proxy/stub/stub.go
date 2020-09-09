@@ -7,7 +7,7 @@ import (
 	"github.com/Gitforxuyang/protoreflect/metadata"
 	"github.com/Gitforxuyang/protoreflect/proxy/reflection"
 	"github.com/golang/protobuf/proto"
-	"github.com/jhump/protoreflect/desc"
+	"github.com/Gitforxuyang/protoreflect/desc"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	grpc_metadata "google.golang.org/grpc/metadata"
