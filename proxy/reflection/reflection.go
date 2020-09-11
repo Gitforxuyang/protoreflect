@@ -3,10 +3,10 @@ package reflection
 import (
 	"fmt"
 
-	"github.com/Gitforxuyang/protoreflect/grpcurl"
-	"github.com/golang/protobuf/proto"
 	"github.com/Gitforxuyang/protoreflect/desc"
 	"github.com/Gitforxuyang/protoreflect/dynamic"
+	"github.com/Gitforxuyang/protoreflect/grpcurl"
+	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
 
 	perrors "github.com/Gitforxuyang/protoreflect/errors"
@@ -24,6 +24,7 @@ type Reflector interface {
 	CreateInvocation(serviceName, methodName string, input []byte) (*MethodInvocation, error)
 	ListServices() ([]string, error)
 	DescribeService(serviceName string) ([]*MethodDescriptor, error)
+	RefreshDesc(serviceName string)
 }
 
 // NewReflector creates a new Reflector from the reflection client
@@ -34,19 +35,27 @@ func NewReflector(rc grpcreflectClient) Reflector {
 }
 
 type reflectorImpl struct {
-	rc *reflectionClient
+	rc      *reflectionClient
+	svcDesc *ServiceDescriptor
 }
-
+func (r *reflectorImpl) RefreshDesc(serviceName string){
+	serviceDesc, _ := r.rc.resolveService(serviceName)
+	r.svcDesc=serviceDesc
+}
 // CreateInvocation creates a MethodInvocation by performing reflection
 func (r *reflectorImpl) CreateInvocation(serviceName,
 	methodName string,
 	input []byte,
 ) (*MethodInvocation, error) {
-	serviceDesc, err := r.rc.resolveService(serviceName)
-	if err != nil {
-		return nil, errors.Wrap(err, "service was not found upstream even though it should have been there")
+	if r.svcDesc == nil {
+		serviceDesc, err := r.rc.resolveService(serviceName)
+		if err != nil {
+			return nil, errors.Wrap(err, "service was not found upstream even though it should have been there")
+		}
+		r.svcDesc=serviceDesc
 	}
-	methodDesc, err := serviceDesc.FindMethodByName(methodName)
+
+	methodDesc, err := r.svcDesc.FindMethodByName(methodName)
 	if err != nil {
 		return nil, errors.Wrap(err, "method not found upstream")
 	}
@@ -268,7 +277,7 @@ func (m *messageImpl) UnmarshalJSON(b []byte) error {
 		return &perrors.ProxyError{
 			Code:    perrors.MessageTypeMismatch,
 			Message: "input JSON does not match messageImpl type",
-			Err:err,
+			Err:     err,
 		}
 	}
 	return nil
